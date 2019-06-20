@@ -1,0 +1,129 @@
+header {
+  text-align: center;
+  margin: 1em auto;
+}
+
+/* cards */
+
+.container {
+    height: 300px;
+    width: fit-content;
+    margin: 1em auto;
+}
+
+/* CARD: the names starting with a */
+
+div ul {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    width: 90%;
+    height: inherit;
+    margin: 1px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+.half {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    width: 50%;
+    height: inherit;
+    margin: 2px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+/* after button is pressed */
+.flexer {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+div ul li {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 45%;
+    cursor: pointer;
+}
+
+div ul li:after {
+    content: "";
+    display: block;
+    width: 85%; 
+    padding-top: 5px;
+    border-bottom: 1px dotted grey; 
+    z-index:1;
+}
+
+.underline {
+    content: "";
+    display: block;
+    width: 40%; 
+    border-bottom: 1px dotted grey; 
+    z-index:1;
+}
+div ul li.active {
+   text-transform: uppercase;
+}
+
+/* tabs */
+
+nav.tabs li {
+    list-style:none;
+    display:inline-flex;
+}
+
+nav.tabs li {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    padding:8px 14px 6px 14px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    border:1px solid #000000; 
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+nav.tabs li:hover {
+    background-color:rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+.tabs li.active {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-bottom-color: #FFF;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+div ul li:nth-of-type(1n+9) {
+  display: none;
+}
+
+.content {
+    background-color:#ffffff;
+    border:1px solid #464c54;
+    border-top: none; 
+    height: 75%;  
+    text-align: center;
+    margin-top: -3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+
+.lighten {
+    background-color:yellow;
+}
